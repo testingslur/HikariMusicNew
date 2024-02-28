@@ -52,8 +52,8 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # MUST JOIN
 MUST_JOIN = getenv("MUST_JOIN", None)
-if MUST_JOIN.startswith("@"):
-    MUST_JOIN = MUST_JOIN.replace("@", "")
+if MUST_JOIN.startswith("https://t.me/ruangdiskusikami"):
+    MUST_JOIN = MUST_JOIN.replace("https://t.me/ruangdiskusikami", "")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -61,7 +61,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/BionXP/ZenMusic",
+    "https://github.com/testingslur/HikariMusicNew",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
