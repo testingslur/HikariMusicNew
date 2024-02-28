@@ -51,9 +51,7 @@ OWNER_ID = list(
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # MUST JOIN
-MUST_JOIN = getenv("MUST_JOIN", None)
-if MUST_JOIN.startswith("https://t.me/ruangdiskusikami"):
-    MUST_JOIN = MUST_JOIN.replace("https://t.me/ruangdiskusikami", "")
+MUST_JOIN = getenv("MUST_JOIN", "ruangdiskusikami")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
